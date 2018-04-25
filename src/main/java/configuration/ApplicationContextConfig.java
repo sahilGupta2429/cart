@@ -1,5 +1,9 @@
 package configuration;
 
+import java.util.Properties;
+
+import javax.sql.DataSource;
+
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -8,7 +12,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.core.env.Environment;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
+import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
@@ -53,7 +59,7 @@ public class ApplicationContextConfig {
         return commonsMultipartResolver;
     }
     
-    /*@Bean(name = "dataSource")
+   @Bean(name = "dataSource")
     public DataSource getDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
  
@@ -67,9 +73,9 @@ public class ApplicationContextConfig {
          
         return dataSource;
     }
-    */
     
-   /* @Autowired
+    
+   @Autowired
     @Bean(name = "sessionFactory")
     public SessionFactory getSessionFactory(DataSource dataSource) throws Exception {
         Properties properties = new Properties();
@@ -92,7 +98,8 @@ public class ApplicationContextConfig {
         System.out.println("## getSessionFactory: " + sf);
         return sf;
     }
-    */
+    
+    
     @Autowired
     @Bean(name = "transactionManager")
     public HibernateTransactionManager getTransactionManager(SessionFactory sessionFactory) {

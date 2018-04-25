@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.store.order</groupId>
@@ -11,15 +12,8 @@
 	<properties>
 		<java-version>1.8</java-version>
 	</properties>
-<!-- 	
-	<repositories>
-		<repository>
-			<id>codelds</id>
-			<url>https://code.lds.org/nexus/content/groups/main-repo</url>
-		</repository>
-	</repositories>
-
- -->
+	<!-- <repositories> <repository> <id>codelds</id> <url>https://code.lds.org/nexus/content/groups/main-repo</url> 
+		</repository> </repositories> -->
 
 	<dependencies>
 		<dependency>
@@ -68,28 +62,28 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>4.2.5.RELEASE</version>
+			<version>4.3.14.RELEASE</version>
 		</dependency>
 
 		<!-- http://mvnrepository.com/artifact/org.springframework/spring-web%20 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
-			<version>4.2.5.RELEASE</version>
+			<version>4.3.14.RELEASE</version>
 		</dependency>
 
 		<!-- http://mvnrepository.com/artifact/org.springframework/spring-webmvc%20 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>4.2.5.RELEASE</version>
+			<version>4.3.14.RELEASE</version>
 		</dependency>
 
 		<!-- http://mvnrepository.com/artifact/org.springframework/spring-orm%20 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
-			<version>4.2.5.RELEASE</version>
+			<version>4.3.14.RELEASE</version>
 		</dependency>
 
 		<!-- Spring Security Artifacts - START -->
@@ -120,7 +114,14 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>5.2.10.Final</version>
+			<version>5.2.12.Final</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+		<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>6.0.7.Final</version>
 		</dependency>
 
 		<!-- http://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager%20 -->
