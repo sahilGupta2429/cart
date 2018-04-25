@@ -1,0 +1,9 @@
+entity\Product.class
+entity\Order.class
+configuration\SpringWebAppInitializer.class
+entity\Account.class
+configuration\SpringSecurityInitializer.class
+configuration\WebMvcConfig.class
+configuration\WebSecurityConfig.class
+entity\OrderDetail.class
+configuration\ApplicationContextConfig.class
