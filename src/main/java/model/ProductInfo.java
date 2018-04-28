@@ -11,7 +11,7 @@ public class ProductInfo {
 	
 	private boolean newProduct = false;
 	
-	private CommonsMultipartFile fileDate;
+	private CommonsMultipartFile fileData;
 	
 	public ProductInfo() {
 		
@@ -62,12 +62,12 @@ public class ProductInfo {
 		this.newProduct = newProduct;
 	}
 
-	public CommonsMultipartFile getFileDate() {
-		return fileDate;
+	public CommonsMultipartFile getFileData() {
+		return fileData;
 	}
 
-	public void setFileDate(CommonsMultipartFile fileDate) {
-		this.fileDate = fileDate;
+	public void setFileData(CommonsMultipartFile fileData) {
+		this.fileData = fileData;
 	}
 	
 }

@@ -35,7 +35,7 @@ public class CartInfo {
 		this.customerInfo = customerInfo;
 	}
 	
-	private List<CartLineInfo>  getCartLines(){
+	public List<CartLineInfo>  getCartLines(){
 		return this.cartLines;
 	}
 	
@@ -53,7 +53,7 @@ public class CartInfo {
 		
 		if(line==null) {
 			line = new CartLineInfo();
-			line.setQuality();
+			line.setQuantity(0);
 			line.setProductInfo(productInfo);
 			this.cartLines.add(line);
 		}
