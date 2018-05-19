@@ -19,6 +19,13 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+import dao.AccountDAO;
+import dao.OrderDAO;
+import dao.ProductDAO;
+import daoImpl.AccountDaoImpl;
+import daoImpl.OrderDaoImpl;
+import daoImpl.ProductDaoImpl;
+
 @Configuration
 @ComponentScan("*")
 @EnableTransactionManagement
@@ -108,23 +115,23 @@ public class ApplicationContextConfig {
         return transactionManager;
     }
  
-  /*  @Bean(name = "accountDAO")
+    @Bean(name = "accountDAO")
     public AccountDAO getApplicantDAO() {
-        return new AccountDAOImpl();
+        return new AccountDaoImpl();
     }
  
     @Bean(name = "productDAO")
     public ProductDAO getProductDAO() {
-        return new ProductDAOImpl();
+        return new ProductDaoImpl();
     }
  
     @Bean(name = "orderDAO")
     public OrderDAO getOrderDAO() {
-        return new OrderDAOImpl();
+        return new OrderDaoImpl();
     }
      
     @Bean(name = "accountDAO")
     public AccountDAO getAccountDAO()  {
-        return new AccountDAOImpl();
-    }*/
+        return new AccountDaoImpl();
+    }
 }
